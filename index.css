@@ -1,0 +1,26 @@
+*{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background: black;
+    position: relative;
+}
+.girl img{
+    position: absolute;
+    top:100px;
+    left:35%;
+    height: 500px;
+    width: 400px;
+}
+@media only screen and (max-width:370px) {
+    .girl img{
+        top:50px;
+        left:9%;
+        height:450px;
+        width: 300px;
+    }
+}

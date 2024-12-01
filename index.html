@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- Using CDN for snowstorm.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/JQuery-Snowfall/1.7.4/snowfall.min.js" integrity="sha512-V8gB+nZbgh3dHE0GjkUWxviH309p7PyDnnxj5VnQeSfyKdAiMQooXkym/eq2NGDaSgub6VfZ14FaMDb94sS9dw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="girl">
+            <img src="pic.png" alt="A girl looking sad">
+        </div>
+    </div>
+    <noscript>
+        <p>Please enable JavaScript to view the snow effect.</p>
+    </noscript>
+    
+    <script>
+        window.onload = function() {
+            if (typeof snowFall !== "undefined" && snowFall.snow) {
+                snowFall.snow(document.querySelector(".container"), {
+                    round: true,
+                    minSize: 1,
+                    maxSize: 8,
+                    shadow: true,
+                    flakeCount: 150,
+                    flakeColor: "#c7dfea"
+                });
+            } else {
+                console.error("snowFall library is not loaded properly.");
+            }
+        };
+    </script>
+</body>
+</html>
