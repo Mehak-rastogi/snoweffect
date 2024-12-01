@@ -18,7 +18,7 @@
 }
 @media only screen and (width<410px) {
     .girl img{
-       bottom:10px;
+       top:200px;
         left:9%;
         height:450px;
         width: 300px;
